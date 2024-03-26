@@ -27,6 +27,6 @@ def yield_gnome_sort(arr: list):
 
         for index, item in enumerate(arr):
             indexes[str(index)] = item
-
+        indexes['i'] = i
         yield indexes
         indexes = {}

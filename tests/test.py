@@ -1,4 +1,5 @@
 import random
+import time
 
 def generate_array(amount: int, array_size: int):
     for __ in range(amount):
@@ -7,8 +8,8 @@ def generate_array(amount: int, array_size: int):
 
 def test(algoritm):
     for arr in generate_array(100, 100):
+        start = time.time()
         assert algoritm(arr) == sorted(arr)
-    
-    print("All tests passed")
+        print(f"Time: {(time.time() - start) * 1000} ms")
 
 

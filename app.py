@@ -4,7 +4,7 @@ from algorithms import yield_gnome_sort
 
 
 class SortRequest(BaseModel):
-    array: list
+    array: list[int]
 
 
 app = FastAPI()

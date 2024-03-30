@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gnome-Sort</title>
+    <link href="src/style.css" rel="stylesheet">
+    <script src="src/script.js"></script>
+  </head>
+  <script>
+    window.onload = () => {
+      add_input_enter_listener();
+    }  
+  </script>
+  <body>
+     <div class="container">
+        <section> 
+          <div class="header"></div>
+          <div class="title">
+            <h1>O que é Gnome Sort?</h2>
+          </div>     
+          <div class="explanations">
+            <div class="explanation right">
+              <p><a class="emphasis">O Gnome Sort</a> (também conhecido como Stupid Sort) é um algoritmo de ordenação simples 
+                e intuitivo que pertence à categoria dos algoritmos de ordenação por comparação. 
+                Ele é chamado de "Gnome Sort" devido à sua semelhança com o comportamento de um gnomo de 
+                jardim movendo os elementos de uma lista. 
+              </p> 
+            </div>
+
+            <div class="explanation left">
+             <p>A ideia básica por trás do Gnome Sort é percorrer a 
+              lista de elementos e, se dois elementos consecutivos estiverem em ordem correta (de acordo com o critério de ordenação desejado), 
+              avançar para o próximo par de elementos. Se os dois elementos não estiverem em ordem, eles são trocados e o algoritmo retrocede 
+              uma posição na lista para verificar se os elementos anteriores estão agora em ordem correta. Este processo 
+              é repetido até que o final da lista seja alcançado e não haja mais trocas a serem feitas.</p> 
+            </div>
+              <div class="explanation center">
+            <p>
+              O Gnome Sort é um algoritmo bastante simples de implementar, mas não é eficiente em termos de desempenho, 
+              especialmente para grandes conjuntos de dados, 
+              pois sua complexidade média e pior caso é O(n^2), onde 'n' é o número de elementos na lista. Portanto, em geral, o Gnome 
+              Sort não é recomendado para uso em situações onde a eficiência é crucial, mas pode ser útil em situações onde 
+              a simplicidade e a compreensibilidade do algoritmo são mais importantes do que o desempenho absoluto.
+            </p>
+         </div>
+        </div>
+      </section>
+      <section>
+        <div class="title">
+          <h1>Visualização do Gnome Sort</h1>
+        </div>
+        <div class="input-area">
+          <div class="array-input">
+            <input type="" name="array-input" id="array-input" placeholder="Insira o array (cada elemento separado por vírgula, por favor)">
+            <button onclick="create_array()">Gerar Array</button>
+          </div>
+        </div>
+         <div class="display">
+          <ul id="array">
+          </ul>  
+        </div>
+        <div class="buttons">
+          <button onclick="sort_array()">Ordenar</button>
+          <button onclick="reset()">Resetar</button>
+        </div>
+      </section>
+    </div> 
+  </body>
+</html>

@@ -66,16 +66,28 @@ section {
 .emphasis {
   font-size: 25px;
   font-weight: bold;
+  color: purple;
+}
+
+
+.sort-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
 }
 
 .display {
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 60%;
+  justify-content: center ;
   width: 90%;
-  margin: 10px auto;
-  border-radius: 5px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -128,23 +140,11 @@ section {
   }
 }
 
-
-@Keyframes array_element_hover {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 #array {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100%;
   width: 100%;
   font-size: 20px;
@@ -157,9 +157,10 @@ section {
     color: white;
     margin: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
     
     &:hover {
-      animation: array_element_hover 0.5s;
+      transform: scale(1.1);
     }
   }
 }
@@ -190,8 +191,7 @@ section {
 }
 
 .current {
-  border: 2px solid yellow;
-  box-shadow: 0 0 10px yellow;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid purple;
   transform: scale(1.1);
 }
-

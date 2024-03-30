@@ -66,7 +66,7 @@ const ordenate_array_elements = (steps) => {
         });
       }
     }, delay);
-    delay += 1000;
+    delay += 1000
   });
 };
 

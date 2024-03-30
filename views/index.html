@@ -7,6 +7,11 @@
     <link href="src/style.css" rel="stylesheet">
     <script src="src/script.js"></script>
   </head>
+  <script>
+    window.onload = () => {
+      add_input_enter_listener();
+    }  
+  </script>
   <body>
      <div class="container">
         <section> 
@@ -45,8 +50,19 @@
         <div class="title">
           <h1>Visualização do Gnome Sort</h1>
         </div>
-        <div class="display">
-          
+        <div class="input-area">
+          <div class="array-input">
+            <input type="" name="array-input" id="array-input" placeholder="Insira o array (cada elemento separado por vírgula, por favor)">
+            <button onclick="create_array()">Gerar Array</button>
+          </div>
+        </div>
+         <div class="display">
+          <ul id="array">
+          </ul>  
+        </div>
+        <div class="buttons">
+          <button onclick="sort_array()">Ordenar</button>
+          <button onclick="reset()">Resetar</button>
         </div>
       </section>
     </div> 

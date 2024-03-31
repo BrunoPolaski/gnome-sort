@@ -1,4 +1,4 @@
-[![Tests](https://github.com/wOL-Lucas/gnome-sort/actions/workflows/workflow.yaml/badge.svg)](https://github.com/wOL-Lucas/gnome-sort/actions/workflows/workflow.yaml)
+[![Tests](https://github.com/wOL-Lucas/gnome-sort/actions/workflows/workflow.yaml/badge.svg)](https://github.com/BrunoPolaski/gnome-sort/actions/workflows/workflow.yaml)
 
 
 ## Install dependencies

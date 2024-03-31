@@ -101,8 +101,14 @@ def generate_mesures():
 
                 print("random_unsorted_mesure -> done for size", size)
 
-        with open("mesures/random_unsorted_mesures.json", "w") as file:
-            file.write(json.dumps(random_unsorted_mesures, indent=4))
+            with open("mesures/random_unsorted_mesures.json", "w+") as file:
+
+                file.write(
+                    json.dumps(
+                        random_unsorted_mesures,
+                        indent=4,
+                    )
+                )
 
     def ordered_asc_mesure():
         print("ordered_asc_mesure -> started")
@@ -121,8 +127,13 @@ def generate_mesures():
 
                 print("ordered_asc_mesure -> done for size", size)
 
-        with open("mesures/ordered_asc_mesures.json", "w") as file:
-            file.write(json.dumps(ordered_asc_mesures, indent=4))
+            with open("mesures/ordered_asc_mesures.json", "w+") as file:
+                file.write(
+                    json.dumps(
+                        ordered_asc_mesures,
+                        indent=4,
+                    )
+                )
 
     def ordered_desc_mesure():
         print("ordered_desc_mesure -> started")
@@ -141,8 +152,13 @@ def generate_mesures():
 
                 print("ordered_desc_mesure -> done for size", size)
 
-        with open("mesures/ordered_desc_mesures.json", "w") as file:
-            file.write(json.dumps(ordered_desc_mesures, indent=4))
+            with open("mesures/ordered_desc_mesures.json", "w+") as file:
+                file.write(
+                    json.dumps(
+                        ordered_desc_mesures,
+                        indent=4,
+                    )
+                )
 
     def almost_ordered_mesure():
         print("almost_ordered_mesure -> started")
@@ -161,8 +177,13 @@ def generate_mesures():
 
                 print("almost_ordered_mesure -> done for size", size)
 
-        with open("mesures/almost_ordered_mesures.json", "w") as file:
-            file.write(json.dumps(almost_ordered_mesures, indent=4))
+            with open("mesures/almost_ordered_mesures.json", "w+") as file:
+                file.write(
+                    json.dumps(
+                        almost_ordered_mesures,
+                        indent=4,
+                    )
+                )
 
     threads = [
         threading.Thread(target=random_unsorted_mesure),

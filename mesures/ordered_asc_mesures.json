@@ -1,0 +1,22 @@
+[
+    {
+        "size": 100,
+        "time_in_seconds": 0.0
+    },
+    {
+        "size": 1000,
+        "time_in_seconds": 0.0
+    },
+    {
+        "size": 10000,
+        "time_in_seconds": 0.0
+    },
+    {
+        "size": 100000,
+        "time_in_seconds": 0.005509376525878906
+    },
+    {
+        "size": 1000000,
+        "time_in_seconds": 0.3135685920715332
+    }
+]

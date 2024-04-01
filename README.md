@@ -22,6 +22,11 @@ pip install -r requirements.txt
 ```
 uvicorn app:app --reload
 ```
+
+
+
+# Métricas
+-------------------------------------------------------
 <div style="text-align: center;">
 
 **Métricas - Array Aleatório Desordenado**

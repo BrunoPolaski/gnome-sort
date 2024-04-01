@@ -15,8 +15,16 @@
 <body>
 <div class="container">
     <div>
-        <div class="header"></div>
-        <div class="title">
+        <div class="header">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#what-is">O que é?</a></li>
+                    <li><a href="#sort">Ordenar</a></li>
+                    <li><a href="#metrics">Métricas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="what-is" class="title">
             <h1>O que é Gnome Sort?</h1>
         </div>
         <div class="explanations">
@@ -46,7 +54,7 @@
             </div>
         </div>
     </div>
-    <div class="sort-area">
+    <div id="sort" class="sort-area">
         <div class="title">
             <h1>Visualização do Gnome Sort</h1>
         </div>
@@ -65,7 +73,7 @@
             <button onclick="reset()">Resetar</button>
         </div>
     </div>
-    <div class="metrics-area">
+    <div id="metrics" class="metrics-area">
         <div class="metrics">
             <h2>Métricas</h2>
             <table>

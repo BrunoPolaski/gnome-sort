@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  scrollbar-width: none;
 }
 
 
@@ -19,9 +20,33 @@
 }
 
 .header {
-  height: 50px;
+  height: fit-content;
   width: 100%;
   background: purple;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+  gap: 20px;
+  padding: 10px;
+  
+  & li {
+    cursor: pointer;
+
+    & a {
+      color: white;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 section {
@@ -38,16 +63,14 @@ section {
 }
 
 .explanation {
-  
   position: relative;
   font-size: 20px;
-  
   width: 30%;
   padding: 20px;
   margin: 25px;
-  background: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #f1f1f1;
+  border-radius: 25px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     
   &.right {
     left: 50%;
@@ -85,9 +108,8 @@ section {
   align-items: center;
   justify-content: center ;
   width: 90%;
-  height: 300px;
   padding: 20px;
-  border-radius: 25px;
+  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -135,7 +157,7 @@ section {
     margin: 10px;
 
     &:hover {
-      background: #6a1b9a;
+      background: #980098;
     }
   }
 }
@@ -172,7 +194,7 @@ section {
   height: 10%;
   width: 100%;
   margin: 10px auto;
-
+  
   & button {
     min-height: 75px;
     min-width: 125px;
@@ -183,9 +205,10 @@ section {
     color: white;
     cursor: pointer;
     margin: 10px;
+    transition: all 0.5s ease-in-out;
 
     &:hover {
-      background: #6a1b9a;
+      background: #980098;
     }
   }
 }
@@ -199,20 +222,17 @@ section {
 .metrics-area {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
-  margin: 10px auto;
-  border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
   background: #f9f9f9;
 }
 
 .metrics {
-  margin-top: 100px;
   padding: 20px;
   height: fit-content;
-  border-radius: 5px;
+  border-radius: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   & table {
@@ -254,11 +274,14 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 
   & a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    transition: all 0.5s ease;
   }
 
   & a:hover {
